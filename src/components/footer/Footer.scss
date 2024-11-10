@@ -1,0 +1,21 @@
+.footer {
+    @apply w-full min-h-[30vh] bg-gray px-[3%];
+
+    .footer-inner {
+        @apply max-w-[1000px] min-h-[30vh] m-auto px-[5%] py-[10%] md:py-[5%] grid grid-cols-1 gap-[50px];
+
+        .footer-top {
+
+            .footer-text {
+                @apply text-center font-primary text-white text-sm md:text-base;
+            }
+        }
+
+        .footer-bottom {
+
+            .author-text {
+                @apply text-center font-primary text-white text-sm md:text-base;
+            }
+        }
+    }
+}
