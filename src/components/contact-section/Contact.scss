@@ -1,0 +1,27 @@
+.contact {
+    @apply w-full min-h-[50vh] sm:min-h-[50vh] lg:min-h-[40vh] bg-[url('../../assets/images/leafe.jpeg')] px-[5%] bg-[];
+
+    .contact-inner {
+        @apply max-w-[1000px] m-auto min-h-[50vh] sm:min-h-[50vh] lg:min-h-[40vh] flex justify-end flex-col py-[5%] gap-[30px];
+
+       .contact-header {
+            @apply text-black font-primary text-4xl font-semibold;;
+       }
+
+       .contact-form {
+            @apply flex flex-col gap-[30px] py-[30px] md:py-[0px] sm:flex-row;
+ 
+            .contact-input {  
+                @apply px-[30px] py-[15px] rounded max-w-[500px] sm:min-w-[300px] min-w-[200px];
+
+                &:placeholder-shown {
+                    @apply text-slate-500 font-primary;
+                }
+            }  
+
+            .contact-btn {
+                @apply bg-white text-center text-black font-primary px-[30px] py-[15px] rounded hover:bg-slate-100;
+            }
+       }
+    }   
+}
