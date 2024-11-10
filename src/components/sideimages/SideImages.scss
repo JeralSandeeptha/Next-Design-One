@@ -1,0 +1,35 @@
+.side-images {
+    @apply w-full min-h-[85vh] grid grid-cols-2;
+
+    @media screen and (max-width: 800px) {
+        @apply grid-cols-1;
+    }
+    
+    .left-image-container {
+        @apply bg-[url('../../assets/images/pexelsphoto1600130.jpeg')] bg-cover bg-no-repeat bg-center;
+
+        @media screen and (max-width: 800px) {
+            @apply min-h-[75vh];
+        }
+    }
+
+    .right-image-container {
+        @apply bg-[url('../../assets/images/pexelsphoto1622419.jpeg')] bg-cover bg-no-repeat bg-center;
+    
+        .side-image-content {
+            @apply w-full h-[85vh] items-center justify-center text-center p-[10%];
+            
+            .side-images-header {
+                @apply text-5xl font-primary mb-3 text-white font-light;
+            }
+            
+            .side-images-subheader {
+                @apply font-third;
+            }
+        }
+
+        .bottom-subheader {
+            @apply text-center p-[5%] font-third;
+        }
+    }
+}

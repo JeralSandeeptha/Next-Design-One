@@ -9,8 +9,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        white: '#ffffff',
+        black: '#000000',
+        gray: 'rgb(51, 51, 51)',
+        lightGreen: 'rgb(216, 223, 208)',
+      },
+      fontFamily: {
+        primary: ['Plus Jakarta Sans', 'sans-serif'],
+        secondary: ['Dela Gothic One', 'sans-serif'],
+        third: ['Roboto', 'sans-serif'],
       },
     },
   },
